@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Manish Kumar Saini – Full Stack Web Developer & B.Tech CSE Student at Lovely Professional University. Portfolio showcasing projects in React, Node.js, Web Development, and IoT Safety Automation." />
+  <meta name="keywords" content="Manish Kumar Saini, Portfolio, Full Stack Web Developer, B.Tech CSE, Lovely Professional University, React.js, Node.js, Web Development" />
+  <meta name="author" content="Manish Kumar Saini" />
+  <meta property="og:title" content="Manish Kumar Saini | Full Stack Web Developer Portfolio" />
+  <meta property="og:description" content="Portfolio of Manish Kumar Saini – B.Tech CSE Student & Full Stack Web Developer." />
+  <title>Manish Kumar Saini | Full Stack Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Animated Particle Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="nav-logo" id="nav-logo">Manish<span>.dev</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" id="nav-home" class="active">Home</a></li>
+        <li><a href="#projects" id="nav-projects">Projects</a></li>
+        <li><a href="#skills" id="nav-skills">Skills</a></li>
+        <li><a href="#experience" id="nav-experience">Experience</a></li>
+        <li><a href="#education" id="nav-education">Education & Certs</a></li>
+        <li><a href="#contact" id="nav-contact" class="nav-cta">Contact Me</a></li>
+      </ul>
+      <div class="nav-hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO / HOME ==================== -->
+  <section id="home">
+    <div class="hero-bg-image" aria-hidden="true"></div>
+    <div class="container hero-inner">
+
+      <!-- LEFT: Text -->
+      <div class="hero-content">
+        <div class="hero-eyebrow">Hello, World! — Welcome to my Portfolio</div>
+
+        <h1 class="hero-name">
+          <span class="gradient-text">Manish Kumar</span><br />Saini
+        </h1>
+
+        <p class="hero-title-line">
+          B.Tech CSE &nbsp;·&nbsp; <span class="typed-text" id="typed-role">Full Stack Web Developer</span>
+        </p>
+
+        <p class="hero-desc">
+          I am a <strong>Bachelor of Technology in Computer Science and Engineering</strong> student at <strong>Lovely Professional University</strong> with a focus on becoming a <strong>Full Stack Web Developer</strong>. Passionate about Web Development, AI, Data Structures, Databases, and Cloud Computing, I build responsive user interfaces, real-time emergency web systems, geospatial hazard portals, and automated safety solutions.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary" id="hero-view-projects">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            View Projects
+          </a>
+          <a href="#contact" class="btn-secondary" id="hero-contact">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Get In Touch
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number" id="stat-projects">4+</div>
+            <div class="stat-label">Projects Built</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">8+</div>
+            <div class="stat-label">Technologies</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">Full Stack</div>
+            <div class="stat-label">Goal Driven</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Visual Orb -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-orb">
+          <div class="orb-ring"></div>
+          <div class="orb-ring"></div>
+          <div class="orb-ring"></div>
+          <div class="orb-center">💻</div>
+        </div>
+        <div class="floating-badge fb1">🌐 Web Development</div>
+        <div class="floating-badge fb2">⚡ React.js & Node.js</div>
+        <div class="floating-badge fb3">🛡️ Emergency Systems</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <section id="projects">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-tag">Featured Work</div>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-sub">A collection of software & hardware solutions built with purpose—from women's safety platforms to interactive disaster portals.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal reveal-delay-1" id="project-sheild">
+          <div class="project-header-meta">
+            <span class="project-date">Dec 2025 – Jan 2026</span>
+          </div>
+          <div class="project-icon icon-purple">🛡️</div>
+          <div class="project-tags">
+            <span class="tag">React.js</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Express.js</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Geolocation API</span>
+            <span class="tag">Web MediaStream API</span>
+            <span class="tag">Tailwind CSS</span>
+          </div>
+          <h3 class="project-title">SHE-ILD – Women Safety & Emergency SOS Web Platform</h3>
+          <ul class="project-bullet-list">
+            <li>Architected and deployed an emergency SOS system designed for rapid distress alerting and automated incident recording.</li>
+            <li>Integrated browser Geolocation and Leaflet Map APIs to stream real-time GPS coordinates and route users toward verified emergency zones.</li>
+            <li>Implemented background audio capture using the Web MediaStream API on SOS trigger, securely streaming encrypted evidence clips to cloud storage.</li>
+            <li>Optimized the alerting pipeline to achieve sub-second dispatch latency across diverse desktop and mobile browsers.</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/manishsaini954635-wq" target="_blank" rel="noopener noreferrer" class="proj-link" id="proj1-demo">
+              <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              Live Demo
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal reveal-delay-2" id="project-disaster">
+          <div class="project-header-meta">
+            <span class="project-date">Feb 2026 – Mar 2026</span>
+          </div>
+          <div class="project-icon icon-cyan">🌊</div>
+          <div class="project-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Leaflet Maps</span>
+            <span class="tag">Weather & Disaster APIs</span>
+          </div>
+          <h3 class="project-title">Disaster Risk Management Portal</h3>
+          <ul class="project-bullet-list">
+            <li>Engineered an interactive disaster management portal providing real-time hazard mapping, risk assessment, and emergency protocols.</li>
+            <li>Built responsive geospatial visualization layers for flood, earthquake, and cyclone tracking to enhance community preparedness.</li>
+            <li>Designed an intuitive advisory interface featuring active emergency helplines, safety checklists, and evacuation zone maps.</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/manishsaini954635-wq" target="_blank" rel="noopener noreferrer" class="proj-link" id="proj2-demo">
+              <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              Live Demo
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal reveal-delay-3" id="project-lpg">
+          <div class="project-header-meta">
+            <span class="project-date">Hardware & Automation</span>
+          </div>
+          <div class="project-icon icon-blue">🔥</div>
+          <div class="project-tags">
+            <span class="tag">Arduino</span>
+            <span class="tag">C / C++</span>
+            <span class="tag">Gas Sensors</span>
+            <span class="tag">Flame Sensors</span>
+            <span class="tag">Automation</span>
+          </div>
+          <h3 class="project-title">LPG Gas Leakage & Flame Detection with Automatic Shut-off System</h3>
+          <ul class="project-bullet-list">
+            <li>Developed an Arduino-based safety system to detect gas leakage and flame conditions and automatically control the gas supply.</li>
+            <li>Worked on system design, sensor integration, automation logic, and safety features for instant hazard mitigation.</li>
+            <li>Configured automated alarm and valve shut-off mechanisms to prevent fire accidents in residential and industrial environments.</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/manishsaini954635-wq" target="_blank" rel="noopener noreferrer" class="proj-link" id="proj3-code">
+              <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+              Project Details
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal reveal-delay-4" id="project-portfolio">
+          <div class="project-header-meta">
+            <span class="project-date">Web Development</span>
+          </div>
+          <div class="project-icon icon-purple">⚡</div>
+          <div class="project-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">UI/UX</span>
+            <span class="tag">Responsive</span>
+          </div>
+          <h3 class="project-title">Portfolio / Web Development Projects</h3>
+          <ul class="project-bullet-list">
+            <li>Worked on web-development concepts using HTML, CSS, and JavaScript, focusing on responsive layouts, user interfaces, and practical problem solving.</li>
+            <li>Designed clean, component-driven layouts featuring CSS animations, particle effects, interactive cards, and mobile responsiveness.</li>
+            <li>Applied modern frontend design patterns to transform complex requirements into fast, accessible web interfaces.</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/manishsaini954635-wq" target="_blank" rel="noopener noreferrer" class="proj-link" id="proj4-code">
+              <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+              Source Code
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section id="skills">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-tag">Expertise</div>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-sub">A versatile technical skill set spanning front-end design, back-end web frameworks, database administration, and problem solving.</p>
+      </div>
+
+      <div class="skills-layout">
+
+        <!-- Left: Skill Bars -->
+        <div class="reveal reveal-delay-1">
+          <p class="skill-category-title">// Core Proficiencies</p>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span class="skill-name"><span class="skill-icon">🌐</span>Web Development (HTML/CSS/JS)</span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span class="skill-name"><span class="skill-icon">⚡</span>React.js & Tailwind CSS</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span class="skill-name"><span class="skill-icon">🐍</span>Python & C Programming</span>
+              <span class="skill-pct">82%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-width="82"></div></div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span class="skill-name"><span class="skill-icon">⚙️</span>Node.js & Express.js</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span class="skill-name"><span class="skill-icon">🗃️</span>Databases (MySQL & MongoDB)</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
+          </div>
+
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span class="skill-name"><span class="skill-icon">🧠</span>Data Structures & Problem Solving</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+        </div>
+
+        <!-- Right: Tech Stack + Certs -->
+        <div class="reveal reveal-delay-2">
+          <p class="skill-category-title">// Tech Stack Breakdown</p>
+          <div class="tech-cloud">
+            <div class="tech-pill"><span class="pill-icon">💻</span> C</div>
+            <div class="tech-pill"><span class="pill-icon">🐍</span> Python</div>
+            <div class="tech-pill"><span class="pill-icon">📜</span> JavaScript</div>
+            <div class="tech-pill"><span class="pill-icon">🎨</span> HTML5 & CSS3</div>
+            <div class="tech-pill"><span class="pill-icon">⚛️</span> React.js</div>
+            <div class="tech-pill"><span class="pill-icon">🟢</span> Node.js</div>
+            <div class="tech-pill"><span class="pill-icon">🚀</span> Express.js</div>
+            <div class="tech-pill"><span class="pill-icon">🍃</span> MongoDB</div>
+            <div class="tech-pill"><span class="pill-icon">🐬</span> MySQL</div>
+            <div class="tech-pill"><span class="pill-icon">🌊</span> Tailwind CSS</div>
+            <div class="tech-pill"><span class="pill-icon">🗺️</span> Leaflet Maps API</div>
+            <div class="tech-pill"><span class="pill-icon">📍</span> Geolocation API</div>
+            <div class="tech-pill"><span class="pill-icon">🎙️</span> Web MediaStream API</div>
+            <div class="tech-pill"><span class="pill-icon">🤖</span> Arduino</div>
+            <div class="tech-pill"><span class="pill-icon">🐙</span> Git & GitHub</div>
+          </div>
+
+          <br />
+          <p class="skill-category-title">// Specializations & Soft Skills</p>
+          <div class="cert-card" id="domain-web">
+            <div class="cert-icon">💻</div>
+            <div>
+              <div class="cert-name">Full-Stack Web Development</div>
+              <div class="cert-issuer">Frontend Design · REST APIs · Real-time SOS Platforms</div>
+            </div>
+          </div>
+          <div class="cert-card" id="domain-soft">
+            <div class="cert-icon">🤝</div>
+            <div>
+              <div class="cert-name">Soft Skills & Leadership</div>
+              <div class="cert-issuer">Problem-Solving · Teamwork · Adaptability · Communication</div>
+            </div>
+          </div>
+          <div class="cert-card" id="domain-interests">
+            <div class="cert-icon">🚀</div>
+            <div>
+              <div class="cert-name">Technical Interests</div>
+              <div class="cert-issuer">Web Development · Artificial Intelligence · Cloud Computing</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE ==================== -->
+  <section id="experience">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-tag">Community & Leadership</div>
+        <h2 class="section-title">Teaching & Community Experience</h2>
+        <p class="section-sub">Empowering community learners through interactive programming education and hands-on coding practice.</p>
+      </div>
+
+      <div class="experience-card reveal reveal-delay-1">
+        <div class="exp-header">
+          <div>
+            <h3 class="exp-role">Python Programming Educator / Mentor</h3>
+            <div class="exp-company">Community Development Project</div>
+          </div>
+          <div class="exp-badge">Community Project</div>
+        </div>
+        <div class="exp-title-sub">Python Programming Fundamentals and Basic Problem Solving for Community Learners</div>
+        <p class="exp-desc">
+          Conducted student teaching sessions covering Python fundamentals and basic problem-solving. Delivered practical coding activities and exercises during the Community Development Project, helping learners gain confidence in logic building and software basics.
+        </p>
+        <div class="exp-highlights">
+          <div class="exp-highlight-item">
+            <span class="exp-icon">✨</span>
+            <span>Completed practical teaching and coding sessions as part of the Community Development Project.</span>
+          </div>
+          <div class="exp-highlight-item">
+            <span class="exp-icon">✨</span>
+            <span>Developed practical programming knowledge through hands-on C++, Python, Data Structures, DBMS, and Web Development learning.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EDUCATION & ACHIEVEMENTS ==================== -->
+  <section id="education">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-tag">Background</div>
+        <h2 class="section-title">Education & Certifications</h2>
+        <p class="section-sub">Academic foundation and certified competencies.</p>
+      </div>
+
+      <div class="achievements-row">
+
+        <!-- Education Card -->
+        <div class="ach-card reveal reveal-delay-1" id="ach-edu">
+          <div class="ach-emoji">🎓</div>
+          <div class="ach-badge">Education</div>
+          <div class="ach-title">Bachelor of Technology (B.Tech)</div>
+          <div class="ach-subtitle">Computer Science and Engineering (Core)</div>
+          <div class="ach-desc">Lovely Professional University, Punjab, India. Gaining deep practical foundation in Data Structures, Algorithms, DBMS, and Web Engineering.</div>
+        </div>
+
+        <!-- Certificate Card -->
+        <div class="ach-card reveal reveal-delay-2" id="ach-cert">
+          <div class="ach-emoji">📜</div>
+          <div class="ach-badge">Certificate</div>
+          <div class="ach-title">Python Programming</div>
+          <div class="ach-subtitle">Infosys Springboard</div>
+          <div class="ach-desc">Certified in core Python concepts, data structures, object-oriented programming, and algorithmic problem-solving techniques.</div>
+        </div>
+
+        <!-- Goal Card -->
+        <div class="ach-card reveal reveal-delay-3" id="ach-goal">
+          <div class="ach-emoji">🎯</div>
+          <div class="ach-badge">Career Goal</div>
+          <div class="ach-title">Full Stack Web Developer</div>
+          <div class="ach-subtitle">Aspiration & Focus</div>
+          <div class="ach-desc">Dedicated to crafting high-performance full-stack web applications, integrating responsive frontends with robust API backends and databases.</div>
+        </div>
+
+        <!-- Achievements Card -->
+        <div class="ach-card reveal reveal-delay-4" id="ach-practical">
+          <div class="ach-emoji">🏆</div>
+          <div class="ach-badge">Achievement</div>
+          <div class="ach-title">Practical Coding & Teaching Excellence</div>
+          <div class="ach-subtitle">Community & Technical Growth</div>
+          <div class="ach-desc">Successfully conducted coding workshops for community learners while building hands-on mastery in C++, Python, DBMS, and Web Technologies.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-tag">Let's Connect</div>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-sub">Open to full-stack web development opportunities, collaborations, and tech discussions.</p>
+      </div>
+
+      <div class="contact-wrapper">
+
+        <!-- Left: Info -->
+        <div class="contact-info reveal reveal-delay-1">
+          <p class="tagline">
+            I'm actively looking to strengthen my professional network and explore opportunities in <strong>Full Stack Web Development</strong>, <strong>Software Engineering</strong>, and <strong>Web Technologies</strong>. Whether you have a project idea, a job opportunity, or just want to connect — feel free to reach out!
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:manishsaini954635@gmail.com" class="contact-link-item" id="contact-email">
+              <div class="contact-link-icon">📧</div>
+              <div class="contact-link-info">
+                <div class="contact-link-label">Email Address</div>
+                <div class="contact-link-value">manishsaini954635@gmail.com</div>
+              </div>
+              <span class="contact-link-arrow">→</span>
+            </a>
+
+            <a href="tel:+919631829088" class="contact-link-item" id="contact-mobile">
+              <div class="contact-link-icon">📱</div>
+              <div class="contact-link-info">
+                <div class="contact-link-label">Mobile Number</div>
+                <div class="contact-link-value">+91 9631829088</div>
+              </div>
+              <span class="contact-link-arrow">→</span>
+            </a>
+
+            <a href="https://github.com/manishsaini954635-wq" target="_blank" rel="noopener noreferrer" class="contact-link-item" id="contact-github">
+              <div class="contact-link-icon">🐙</div>
+              <div class="contact-link-info">
+                <div class="contact-link-label">GitHub</div>
+                <div class="contact-link-value">github.com/manishsaini954635-wq</div>
+              </div>
+              <span class="contact-link-arrow">→</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/manish-saini-7003ba39b" target="_blank" rel="noopener noreferrer" class="contact-link-item" id="contact-linkedin">
+              <div class="contact-link-icon">💼</div>
+              <div class="contact-link-info">
+                <div class="contact-link-label">LinkedIn</div>
+                <div class="contact-link-value">linkedin.com/in/manish-saini-7003ba39b</div>
+              </div>
+              <span class="contact-link-arrow">→</span>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <form class="contact-form reveal reveal-delay-2" id="contact-form" onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label for="form-name">Your Name</label>
+            <input type="text" id="form-name" placeholder="e.g. Alex Morgan" required />
+          </div>
+          <div class="form-group">
+            <label for="form-email">Email Address</label>
+            <input type="email" id="form-email" placeholder="alex@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="form-subject">Subject</label>
+            <input type="text" id="form-subject" placeholder="Project, Job Opportunity, etc." required />
+          </div>
+          <div class="form-group">
+            <label for="form-message">Message</label>
+            <textarea id="form-message" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" id="form-submit" style="width:100%; justify-content:center;">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+            Send Message
+          </button>
+          <p id="form-status" style="text-align:center; margin-top:14px; font-size:0.88rem; color:var(--color-accent-cyan); min-height:20px;"></p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="container footer-inner">
+      <span class="footer-brand">&lt;Manish Kumar Saini /&gt;</span>
+      <span class="footer-copy">© 2026 Manish Kumar Saini · Full Stack Web Developer</span>
+      <div class="footer-socials">
+        <a href="https://github.com/manishsaini954635-wq" target="_blank" rel="noopener noreferrer" class="social-btn" id="footer-github" title="GitHub">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .5C5.648.5.5 5.648.5 12c0 5.095 3.292 9.41 7.863 10.945.575.106.784-.25.784-.554 0-.274-.01-1.003-.016-1.968-3.196.695-3.872-1.54-3.872-1.54-.522-1.327-1.275-1.68-1.275-1.68-1.042-.712.08-.698.08-.698 1.15.081 1.757 1.18 1.757 1.18 1.023 1.753 2.684 1.246 3.338.953.104-.74.4-1.246.728-1.532-2.552-.29-5.234-1.276-5.234-5.68 0-1.255.448-2.28 1.183-3.085-.119-.29-.513-1.46.112-3.043 0 0 .964-.309 3.159 1.178A10.97 10.97 0 0112 6.74a10.97 10.97 0 012.877.387c2.193-1.487 3.155-1.178 3.155-1.178.628 1.583.233 2.753.114 3.043.737.805 1.182 1.83 1.182 3.085 0 4.415-2.686 5.387-5.247 5.671.413.356.78 1.058.78 2.133 0 1.54-.014 2.78-.014 3.16 0 .307.207.665.79.552A11.503 11.503 0 0023.5 12C23.5 5.648 18.352.5 12 .5z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/manish-saini-7003ba39b" target="_blank" rel="noopener noreferrer" class="social-btn" id="footer-linkedin" title="LinkedIn">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452H17.21v-5.569c0-1.328-.026-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.983V9h3.078v1.561h.045c.428-.812 1.472-1.668 3.03-1.668 3.24 0 3.838 2.134 3.838 4.91l-.003.037v6.612zM5.337 7.433a1.782 1.782 0 110-3.564 1.782 1.782 0 010 3.564zm1.54 13.019H3.795V9h3.082v11.452zM22.225 0H1.771C.79 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.454C23.205 24 24 23.226 24 22.271V1.729C24 .774 23.205 0 22.225 0z"/></svg>
+        </a>
+        <a href="mailto:manishsaini954635@gmail.com" class="social-btn" id="footer-email" title="Email">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
