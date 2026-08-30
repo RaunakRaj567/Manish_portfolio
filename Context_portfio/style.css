@@ -266,7 +266,6 @@ section {
   transform-origin: center;
 }
 
-/* Animated Hamburger Close X */
 .nav-hamburger.open span:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
@@ -521,6 +520,88 @@ section {
 .fb1 { top: 20px; right: -20px; animation-delay: 0s; }
 .fb2 { bottom: 60px; left: -30px; animation-delay: 1.5s; }
 .fb3 { bottom: 20px; right: 0px; animation-delay: 3s; font-size: 0.75rem; }
+
+/* ============================
+   ABOUT ME SECTION
+   ============================ */
+#about {
+  background: linear-gradient(180deg, rgba(0, 212, 255, 0.03) 0%, transparent 100%);
+  padding: 100px 0;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about-bio-text {
+  font-size: 1.1rem;
+  color: var(--color-text-secondary);
+  line-height: 1.85;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-card);
+  padding: 32px 36px;
+  backdrop-filter: blur(var(--glass-blur));
+  box-shadow: var(--shadow-card);
+}
+
+.about-bio-text strong {
+  color: var(--color-accent-cyan);
+}
+
+.about-tiles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.about-tile-card {
+  background: var(--color-bg-card);
+  backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: 28px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.about-tile-card:hover {
+  border-color: var(--color-border-hover);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 212, 255, 0.25);
+}
+
+.tile-icon {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.tile-number {
+  font-size: 2.4rem;
+  font-weight: 800;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+
+.tile-label {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 4px;
+}
+
+.tile-desc {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+}
 
 /* ============================
    PROJECTS SECTION
@@ -1306,6 +1387,16 @@ footer {
   }
   .container {
     padding: 0 20px;
+  }
+
+  .about-tiles-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .about-bio-text {
+    padding: 24px 20px;
+    font-size: 1rem;
   }
 
   /* Mobile Full-Screen Navigation Drawer */
